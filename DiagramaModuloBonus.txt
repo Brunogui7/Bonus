@@ -1,0 +1,35 @@
++---------------------+
+|     Funcionario     |
++---------------------+
+| - id: String        |
+| - salario: double   |
+| - cargo: String     |
+| - departamentoId: String |
++---------------------+
+| + getId(): String   |
+| + getSalario(): double |
+| + getCargo(): String|
+| + getDepartamentoId(): String |
++---------------------+
+
++---------------------+
+|     Departamento    |
++---------------------+
+| - id: String        |
+| - valorVendas: double |
++---------------------+
+| + getId(): String   |
+| + getValorVendas(): double |
++---------------------+
+
++---------------------+
+|     ModuloBonus     |
++---------------------+
+| - funcionarios: List<Funcionario> |
+| - departamentos: List<Departamento> |
++---------------------+
+| + calcularBonus(): int |
+| + encontrarDepartamentosComMaiorVenda(): List<Departamento> |
+| + aplicarBonus(departamentos: List<Departamento>): void |
+| + validarEntradas(): void |
++---------------------+
